@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>db2</name><driver>com.ibm.db2.jcc.DB2Driver</driver><username>db2inst</username><password>7d7ff965-722c-4610-aaff-249eb3c6d231</password><savePassword>true</savePassword><url>jdbc:db2://192.168.10.206:50006/tradeco</url><database></database><serverAddress></serverAddress><classpath>E:\Java\db2jcc4.jar</classpath></jdbcDataAdapter>

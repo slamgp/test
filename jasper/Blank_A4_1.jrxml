@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="657ea5b6-b11e-4c51-b5f4-4cc0d04581ae">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="db2"/>
+	<queryString>
+		<![CDATA[select * from  "DB2INST"."REFERENCE32"]]>
+	</queryString>
+	<field name="CODE" class="java.lang.String"/>
+	<field name="DESCRIPTION" class="java.lang.String"/>
+	<field name="DESCRIPTIONU" class="java.lang.String"/>
+	<group name="CODE">
+		<groupExpression><![CDATA[$F{CODE}]]></groupExpression>
+	</group>
+	<group name="DESCRIPTION">
+		<groupExpression><![CDATA[$F{DESCRIPTION}]]></groupExpression>
+	</group>
+	<group name="DESCRIPTIONU">
+		<groupExpression><![CDATA[$F{DESCRIPTIONU}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="575" height="50" uuid="a0f53f98-2074-4924-b7b8-273d4856d94a"/>
+				<textFieldExpression><![CDATA["тест jasperReport"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="10" width="555" height="40" uuid="9660d8e1-7b3c-420c-aa6c-89d5588a6915"/>
+				<textFieldExpression><![CDATA["Справочник контрагенты из  1с"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="72" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="30" width="180" height="30" uuid="fb73a10a-86ec-49f8-a833-7a7c26f9df58"/>
+				<textFieldExpression><![CDATA["id"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="30" width="200" height="30" uuid="19f56b37-9473-4b20-83d1-f31389a10240"/>
+				<textFieldExpression><![CDATA["name"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="180" height="41" uuid="11ed8cd4-83ae-4932-a668-23bb7abfce11"/>
+				<textFieldExpression><![CDATA[$F{CODE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="200" height="41" uuid="9e721671-dbba-4618-83d6-8914f5903460"/>
+				<textFieldExpression><![CDATA[$F{DESCRIPTION}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
